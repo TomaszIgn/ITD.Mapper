@@ -2,7 +2,7 @@
 public class PropertyMap
 {
     public string DestinationPropertyName { get; }
-    public Func<object, object?>? CustomResolver { get; private set}
+    public Func<object, object?>? CustomResolver { get; private set; }
     public bool Ignroe { get; private set; }
 
     public PropertyMap(string destinationPropertyName)
